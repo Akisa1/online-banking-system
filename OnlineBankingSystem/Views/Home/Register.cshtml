@@ -1,0 +1,166 @@
+﻿@{
+    Layout = "_LayoutWithoutLogin";
+}
+
+
+
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                     class="img-fluid"
+                     alt="Sample image" />
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <form class="needs-validation" novalidate>
+                    <div class="divider d-flex align-items-center my-4">
+                        <p class="text-center fw-bold mx-3 mb-0 fs-4">
+                            Welcome to our Online Banking System
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-outline mb-4">
+                                <input type="text"
+                                       id="Identity"
+                                       class="form-control form-control-lg"
+                                       placeholder="Enter a valid Identity Number"
+                                       autocomplete="off"
+                                       required />
+                                <label class="form-label" for="Identity">Identity Number</label>
+                                <div class="invalid-feedback">Please enter a valid Identity Number.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-outline mb-4 col-md-6">
+                                <input type="text"
+                                       id="Name"
+                                       class="form-control form-control-lg"
+                                       placeholder="Enter a Name"
+                                       autocomplete="off"
+                                       required />
+                                <label class="form-label" for="Name">Name</label>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Please enter a valid Name.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-outline mb-4 col-md-6">
+                                <input type="text"
+                                       id="Surname"
+                                       class="form-control form-control-lg"
+                                       placeholder="Enter a Surname"
+                                       autocomplete="off"
+                                       required />
+                                <label class="form-label" for="Surname">Surname</label>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Please enter a valid Surname.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-outline mb-4 col-md-6">
+                                <input type="text"
+                                       id="Username"
+                                       class="form-control form-control-lg"
+                                       placeholder="Enter a Username"
+                                       autocomplete="off"
+                                       required />
+                                <label class="form-label" for="Username">Username</label>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Please enter a valid Username.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-outline mb-4 col-md-6">
+                                <input type="email"
+                                       id="E-Mail"
+                                       class="form-control form-control-lg"
+                                       placeholder="Enter a valid E-Mail"
+                                       autocomplete="off"
+                                       required />
+                                <label class="form-label" for="E-Mail">E-Mail</label>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Please enter a valid E-Mail address.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-outline mb-4 col-md-6">
+                                <input type="tel"
+                                       id="phone"
+                                       class="form-control form-control-lg"
+                                       placeholder="Enter a Phone Number"
+                                       autocomplete="off"
+                                       required />
+                                <!-- <label class="form-label" for="Phone">Phone Number</label> -->
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Please enter a valid Phone Number.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-outline mb-4 col-md-6">
+                                <input type="date"
+                                       id="Birth"
+                                       class="form-control form-control-lg"
+                                       placeholder="Select your Birth Date"
+                                       autocomplete="off"
+                                       required />
+                                <label class="form-label" for="Birth">Birth Date</label>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">You must be at least 18 years old.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-outline mb-4 col-md-6">
+                                <input type="password"
+                                       id="Password"
+                                       class="form-control form-control-lg"
+                                       placeholder="Enter password"
+                                       autocomplete="off"
+                                       required />
+                                <label class="form-label" for="Password">Password</label>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Please enter a password.</div>
+                            </div>
+                        </div>
+
+                        <div class="md-6">
+                            <div class="form-outline mb-4 col-md-6">
+                                <input type="password"
+                                       id="R-Password"
+                                       class="form-control form-control-lg"
+                                       placeholder="Enter password"
+                                       autocomplete="off"
+                                       required />
+                                <label class="form-label" for="R-Password">Re-Enter Password</label>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Please re-enter the same password.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- Checkbox -->
+                    </div>
+                    <div class="text-center text-lg-center mt-4">
+                        <button type="button"
+                                class="btn btn-primary btn-lg"
+                                onclick="validateForm();">
+                            Register
+                        </button>
+                        <hr class="mt-4" />
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="~/js/register.js"></script>

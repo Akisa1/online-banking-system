@@ -1,0 +1,7 @@
+﻿Migration oluşturma komutu
+dotnet ef migrations add AddUserAccount --project OnlineBankingSystem
+
+
+
+Database Güncelleme komutu
+dotnet ef database update --project OnlineBankingSystem
