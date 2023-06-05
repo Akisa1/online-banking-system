@@ -5,3 +5,5 @@ dotnet ef migrations add AddUserAccount --project OnlineBankingSystem
 
 Database Güncelleme komutu
 dotnet ef database update --project OnlineBankingSystem
+
+Entity/MyDbcontext en database ismini kendi bilgisayar isminize göre değiştiriniz 
